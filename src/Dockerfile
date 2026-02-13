@@ -2,8 +2,8 @@ FROM node:22
 
 RUN apt update
 RUN wget https://mega.nz/linux/repo/Debian_12/arm64/megacmd-Debian_12_arm64.deb
-RUN apt install -y "megacmd-Debian_12_arm64.deb"
-RUN rm "megacmd-Debian_12_arm64.deb"
+RUN apt install -y "$PWD/megacmd-Debian_12_amd64.deb"
+RUN rm "$PWD/megacmd-Debian_12_amd64.deb"
 
 # Set the foundry install home
 RUN adduser -D foundry
