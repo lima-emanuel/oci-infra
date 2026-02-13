@@ -1,2 +1,1 @@
-# oci-infra
-My OCI Infrastructure
+# My OCI Infrastructure

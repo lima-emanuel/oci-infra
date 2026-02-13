@@ -1,0 +1,12 @@
+services:
+  fvtt:
+    container_name: Fvtt
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: fvtt:3.0
+    volumes:
+      - /home/ubuntu/foundry/fvtt:/home/foundry/fvtt
+      - /home/ubuntu/foundry/fvttdata:/home/foundry/fvttdata
+    ports:
+      - "30000:30000"
